@@ -107,7 +107,7 @@ class Kindle_notes:
           # INFO("Location {}".format(location))
 
           # the first word of the div should be either Highlight or Note
-          last_note_type = source.split()[0]
+          last_note_type = source.split('(')[0]
 
           # if it's a "Note", add it to the previous highlight
           # because that's what the note is about
